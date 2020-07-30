@@ -1,0 +1,14 @@
+{
+  "chrome": {
+    "default": "84",
+    "versions": {
+      "84": {
+        "env" : ["LANG=ru_RU.UTF-8", "LANGUAGE=ru:en", "LC_ALL=ru_RU.UTF-8", "TZ=Europe/Moscow"],
+        "image": "selenoid/chrome:84.0",
+        "tmpfs": {"/tmp": "size=512m"},
+        "hosts": ["x01.aidata.io:127.0.0.1"],
+        "port": "4444"
+      }
+    }
+  }
+}
