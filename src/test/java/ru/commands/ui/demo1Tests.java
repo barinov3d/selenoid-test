@@ -97,6 +97,6 @@ public class demo1Tests {
     }
     @AfterEach
     public void stopDriver() {
-        Optional.ofNullable(WebDriverRunner.getWebDriver()).ifPresent(WebDriver::close);
+        Optional.ofNullable(WebDriverRunner.getWebDriver()).ifPresent(WebDriver::quit);
     }
 }
