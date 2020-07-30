@@ -57,7 +57,7 @@ public class demo1Tests {
     }
 
     @ParameterizedTest()
-    @ValueSource(strings = {"ya.ru", "google.com"})
+    @ValueSource(strings = {"google.com"})
     public void openPage(String path) {
         open(protocol + path);
         $(By.xpath("//input[contains(@type,'submit')]")).shouldHave(Condition.value("Поиск в Google"));
