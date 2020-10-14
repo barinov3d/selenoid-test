@@ -5,9 +5,11 @@
       "84": {
         "env" : ["LANG=ru_RU.UTF-8", "LANGUAGE=ru:en", "LC_ALL=ru_RU.UTF-8", "TZ=Europe/Moscow"],
         "image": "selenoid/chrome:84.0",
-        "tmpfs": {"/tmp": "size=512m"},
+        "tmpfs": {"/tmp": "size=300m"},
         "hosts": ["x01.aidata.io:127.0.0.1"],
-        "port": "4444"
+        "port": "4444",
+        "cpu" : "0.5",
+        "mem" : "512m"
       }
     }
   }
