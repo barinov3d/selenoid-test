@@ -37,7 +37,7 @@ public class CommonTests {
 
     @BeforeEach
     public void setUp() throws MalformedURLException {
-        final String url = "http://localhost:4444/wd/hub";
+        final String url = "http://172.17.0.3:4444/wd/hub";
         WebDriver driver = new RemoteWebDriver(new URL(url), DesiredCapabilities.chrome());
         driver.manage().window().setSize(new Dimension(1920,1024));
         WebDriverRunner.setWebDriver(driver);
